@@ -1,7 +1,12 @@
 import React from "react";
 
 const NavbarBtn = () => {
-  return <div>NavbarBtn</div>;
+  return (
+    <button className="">
+      Hire Me
+      <LuArrowDownRight />
+    </button>
+  );
 };
 
 export default NavbarBtn;
