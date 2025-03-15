@@ -5,4 +5,5 @@
 @tailwind utilities;
 
 body {
-    @apply bg-darkBlue; 
+  @apply bg-darkblue;
+}
