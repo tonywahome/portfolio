@@ -438,3 +438,8 @@ section {
     border: 3px solid var(--accent-color);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+/* Ongoing Projects Specifics */
+#ongoing-projects .project-img {
+  object-fit: contain;
+}
