@@ -6,50 +6,56 @@
 /* ── 1. CSS Custom Properties ── */
 :root {
   /* Backgrounds */
-  --bg-primary:    #0a0a0f;
-  --bg-secondary:  #0f0f18;
-  --bg-card:       #161622;
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #0f0f18;
+  --bg-card: #161622;
   --bg-card-hover: #1c1c2e;
 
   /* Accent colours */
-  --cyan:          #06b6d4;
-  --cyan-light:    #22d3ee;
-  --cyan-dim:      rgba(6, 182, 212, 0.12);
-  --cyan-glow:     rgba(6, 182, 212, 0.25);
-  --cyan-border:   rgba(6, 182, 212, 0.35);
+  --cyan: #06b6d4;
+  --cyan-light: #22d3ee;
+  --cyan-dim: rgba(6, 182, 212, 0.12);
+  --cyan-glow: rgba(6, 182, 212, 0.25);
+  --cyan-border: rgba(6, 182, 212, 0.35);
 
-  --brown:         #c4973e;
-  --brown-light:   #deb86a;
-  --brown-dim:     rgba(196, 151, 62, 0.12);
-  --brown-border:  rgba(196, 151, 62, 0.35);
+  --brown: #c4973e;
+  --brown-light: #deb86a;
+  --brown-dim: rgba(196, 151, 62, 0.12);
+  --brown-border: rgba(196, 151, 62, 0.35);
 
   /* Text */
-  --text-primary:  #e2e8f0;
-  --text-secondary:#94a3b8;
-  --text-muted:    #64748b;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
 
   /* Borders */
-  --border:        rgba(255, 255, 255, 0.07);
-  --border-hover:  rgba(255, 255, 255, 0.14);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.14);
 
   /* Gradients */
-  --grad-name:     linear-gradient(135deg, var(--cyan) 0%, var(--brown) 100%);
-  --grad-card:     linear-gradient(135deg, rgba(6,182,212,0.05) 0%, rgba(196,151,62,0.05) 100%);
+  --grad-name: linear-gradient(135deg, var(--cyan) 0%, var(--brown) 100%);
+  --grad-card: linear-gradient(
+    135deg,
+    rgba(6, 182, 212, 0.05) 0%,
+    rgba(196, 151, 62, 0.05) 100%
+  );
 
   /* Sizing */
-  --nav-height:    70px;
-  --section-pad:   5rem 8%;
+  --nav-height: 70px;
+  --section-pad: 5rem 8%;
 
   /* Typography */
-  --font-main:    'Space Grotesk', system-ui, sans-serif;
-  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+  --font-main: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
 
   /* Transitions */
-  --transition:    0.3s ease;
+  --transition: 0.3s ease;
 }
 
 /* ── 2. Reset ── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,7 +74,9 @@ body {
   overflow-x: hidden;
 }
 
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 
 a {
   color: inherit;
@@ -76,7 +84,10 @@ a {
   transition: color var(--transition);
 }
 
-img { display: block; max-width: 100%; }
+img {
+  display: block;
+  max-width: 100%;
+}
 
 button {
   font-family: var(--font-main);
@@ -109,7 +120,9 @@ button {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   z-index: 1000;
-  transition: background var(--transition), box-shadow var(--transition);
+  transition:
+    background var(--transition),
+    box-shadow var(--transition);
 }
 
 #navbar.scrolled {
@@ -144,7 +157,7 @@ button {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -182,7 +195,9 @@ button {
   height: 2px;
   background: var(--text-primary);
   border-radius: 2px;
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
 }
 
 .hamburger.open span:nth-child(1) {
@@ -265,7 +280,7 @@ section {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -280,7 +295,9 @@ section {
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
   transition-delay: var(--delay, 0s);
 }
 
@@ -326,7 +343,9 @@ section {
   position: relative;
   z-index: 2;
   border: 3px solid var(--cyan);
-  box-shadow: 0 0 30px var(--cyan-glow), 0 0 60px rgba(6, 182, 212, 0.1);
+  box-shadow:
+    0 0 30px var(--cyan-glow),
+    0 0 60px rgba(6, 182, 212, 0.1);
 }
 
 .hero-pic-ring {
@@ -339,8 +358,15 @@ section {
 }
 
 @keyframes ring-pulse {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50%       { opacity: 0.9; transform: scale(1.05); }
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
 }
 
 .hero-greeting {
@@ -388,8 +414,13 @@ section {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-tagline {
@@ -457,7 +488,9 @@ section {
 
 .hero-socials a {
   color: var(--text-muted);
-  transition: color var(--transition), transform var(--transition);
+  transition:
+    color var(--transition),
+    transform var(--transition);
 }
 
 .hero-socials a:hover {
@@ -486,12 +519,23 @@ section {
   animation: scroll-dot 1.5s infinite;
 }
 
-.hero-scroll-hint span:nth-child(2) { animation-delay: 0.2s; }
-.hero-scroll-hint span:nth-child(3) { animation-delay: 0.4s; }
+.hero-scroll-hint span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.hero-scroll-hint span:nth-child(3) {
+  animation-delay: 0.4s;
+}
 
 @keyframes scroll-dot {
-  0%, 100% { opacity: 0.2; transform: scale(0.8); }
-  50%       { opacity: 1;   transform: scale(1.2); }
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
 /* ── 8. About Section ── */
@@ -617,8 +661,14 @@ section {
 }
 
 @keyframes fadeSlide {
-  from { opacity: 0; transform: translateX(-12px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .exp-role {
@@ -655,11 +705,27 @@ section {
 }
 
 .exp-bullets li::before {
-  content: '▹';
+  content: "▹";
   position: absolute;
   left: 0;
   color: var(--cyan);
   font-size: 0.9rem;
+}
+
+.exp-logo-wrap {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.exp-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
 }
 
 /* ── 10. Education Section ── */
@@ -698,6 +764,13 @@ section {
   color: var(--brown-light);
   font-size: 1.3rem;
   flex-shrink: 0;
+}
+
+.edu-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.3rem;
 }
 
 .edu-degree {
@@ -766,6 +839,13 @@ section {
   border-radius: 8px;
   color: var(--cyan);
   font-size: 1.2rem;
+}
+
+.cert-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.3rem;
 }
 
 .cert-name {
@@ -951,7 +1031,9 @@ section {
 .proj-links a {
   color: var(--text-muted);
   font-size: 1.15rem;
-  transition: color var(--transition), transform var(--transition);
+  transition:
+    color var(--transition),
+    transform var(--transition);
 }
 
 .proj-links a:hover {
@@ -1140,7 +1222,9 @@ footer {
     scrollbar-width: none;
   }
 
-  .exp-tabs::-webkit-scrollbar { display: none; }
+  .exp-tabs::-webkit-scrollbar {
+    display: none;
+  }
 
   .exp-tab {
     border-left: none;
