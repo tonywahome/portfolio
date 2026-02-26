@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Antony Wahome - Data Scientist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for FontAwesome -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <img src="assets/AW Beyno.png"alt="AW Logo" class="header" />
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="assets/Antony%20Wahome%20DE%20Resume%202025%20(1).docx.pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Mobile Nav Placeholder -->
+    <nav id="hamburger-nav">
+        <img src=".assets/"
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="assets/Antony%20Wahome%20DE%20Resume%202025%20(1).docx.pdf" target="_blank" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+      <div class="section__pic-container">
+        <img src="./assets/1.jpeg" alt="Antony Wahome Profile Picture" />
+      </div>
+      <p class="section__text__p1">Hey, I'm</p>
+      <h1 class="title">Antony Wahome</h1>
+      <p class="section__text__p2">
+        Certified Data Analyst with experience developing and implementing data-driven solutions to enterprises. I bring a unique set of technical expertise, analytical thinking and creative problem solving to develop solutions. 
+        I hold a BArts in Psychology and currently pursuing a BSc in Computer Science specializing in Machine Learning and AI.   
+        
+      </p>
+      <div class="btn-container">
+        <a href="#contact" class="btn btn-color-1">Contact Me&longrightarrow;</a>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="title">EXPERIENCE</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="experience-tabs">
+                <button class="tab-btn active" data-target="exp-1">Mountain Creative</button>
+                <button class="tab-btn" data-target="exp-2">Shamiri</button>
+                <button class="tab-btn" data-target="exp-3">Kenya National Bureau of Statistics</button>
+            </div>
+            <div class="experience-content">
+                <div id="exp-1" class="experience-item active">
+                    <h3>Web Developer</h3>
+                    <p class="company-meta">Mountain Creative /Kigali - Rwanda <span class="date">Jan 2025 - Aug 2025</span></p>
+                    <ul>
+                        <li> Worked closely with clients, project managers and other developers to understand project requirements and deliver solutions.</li>
+                        <li>Conducted routine site audits and tests to identify and fix bugs, perfomance and security issues.</li>
+                    </ul>
+                </div>
+                 <div id="exp-2" class="experience-item">
+                    <h3>Research and Analyst</h3>
+                    <p class="company-meta">Shamiri /Nairobi - Kenya <span class="date">May 2022 - Apr 2023</span></p>
+                    <ul>
+                        <li>Fidelity analysis of mental health programs and assess their perfomance.</li>
+                        <li>Independent rating of mental health intervention protocol sessions.</li>
+                    </ul>
+                </div>
+                 <div id="exp-3" class="experience-item">
+                    <h3>Enumerator</h3>
+                    <p class="company-meta">Kenya National Bureau of Statistics /Nakuru - Kenya <span class="date">Jun 2019 - Oct 2019</span></p>
+                    <ul>
+                        <li>Collection of household and demographic data for Kenya 2019 population Census.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="title">FEATURED PROJECTS</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <!-- Project 1 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Pierpoint Analytics.png" alt="Pierpoint Analytics" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Pierpoint Analytics</h2>
+                <div class="project-links">
+                    <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <p>Developed, deployed and maintained Pierpoint Analytics website </p>
+                <p class="tech-stack">React - Typescript - TailwindCSS</p>
+            </div>
+             <!-- Project 2 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <a href="https://nafsi-health-deploy-vymx-qs9hfasv9-tonywahomes-projects.vercel.app/" target="_blank">
+                        <img src="./assets/nafsi_health_dashboard.png" alt="Nafsi Health" class="project-img" />
+                    </a>
+                </div>
+                <h2 class="experience-sub-title project-title">Nafsi Health</h2>
+                <div class="project-links">
+                    <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                    <a href="https://nafsi-health-deploy-vymx-qs9hfasv9-tonywahomes-projects.vercel.app/" target="_blank" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <p>A dual-sided platform designed to modernize the doctor appointment and patient management experience. 
+</p>
+                <p class="tech-stack">React - Typescript - Vercel</p>
+            </div>
+            <!-- Project 3 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/4.jpg" alt="ALU Healthpreneurship Hub" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">ALU Healthpreneurship Hub</h2>
+                <div class="project-links">
+                    <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <p>A one-stop web portal designed to foster innovation in the African healthcare sector.
+                   </p>
+                <p class="tech-stack">React  -  TailwindCSS  -  AntDesign</p>
+            </div>
+             <!-- Project 4 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/GEsOAi4WAAAilgl.jpeg" alt="Project 4" class="project-img" />
+                </div>
+                <h3 class="experience-sub-title project-title">ML Project:
+                  Celestial Object Multi-classifier Model
+                </h3>
+                <div class="project-links">
+                    <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <p>Using Traditional ML and Deep Neural Networks for classifying Stars, Galaxies and Quasars from the Sloan Digital Sky Survey
+                  (SDSS) for cosmological mapping.</p>
+                <p class="tech-stack">Pandas - TensorFlow - Matplotlib</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ongoing-projects">
+      <h2 class="title">ONGOING PROJECTS</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <!-- Ongoing Project 1 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/ALU Astronomy logo png.png" alt="Ongoing Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">ALU Astronomy Club</h2>
+                <div class="project-links">
+                    <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <p>Founded the ALU Astronomy Club aimed at fostering a community of space enthusiasts,
+                   explore the wonders of the universe, ignite curiosity and inspire lifelong
+ learning. currently building an immersive WebApp.
+ .</p>
+                <p class="tech-stack">React - TailwindCSS - Supabase</p>
+            </div>
+             <!-- Ongoing Project 2 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <a href="https://github.com/mangaorphy/PlantGuardAI/tree/main?tab=readme-ov-file#-plantguard-ai" target="_blank">
+                        <img src="./assets/plantguard_logo.png" alt="Ongoing Project 2" class="project-img" />
+                    </a>
+                </div>
+                <h2 class="experience-sub-title project-title">PlantGuard AI</h2>
+                <div class="project-links">
+                    <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <p>An intelligent Android application that helps farmers and gardeners identify plant diseases and find appropriate treatments through AI-powered analysis and a comprehensive product marketplace.</p>
+                <p class="tech-stack">Dart - C++</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <p>CONTACT</p>
+        </div>
+        <div class="contact-buttons">
+            <a href="mailto:antonywahome5@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> Send an email
+            </a>
+            <a href="https://www.linkedin.com/in/antony-wahome-975950194" class="contact-btn" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://wa.me/254705176741" class="contact-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://github.com/tonywahome" class="contact-btn" target="_blank">
+                <i class="fab fa-github"></i> Github
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
