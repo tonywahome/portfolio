@@ -135,6 +135,7 @@ button {
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--text-primary);
+  transition: font-size var(--transition);
 }
 
 .logo-dot {
@@ -598,8 +599,8 @@ section {
   background: var(--black);
   border: 1px solid var(--black-border);
   transition: all var(--transition);
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
 }
 
 .skill-logo-wrapper:hover {
@@ -733,12 +734,13 @@ section {
 }
 
 .exp-logo {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
-  padding: 0.4rem;
+  padding: 0.5rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.02);
+  transition: all var(--transition);
 }
 
 /* ── 10. Education Section ── */
@@ -767,8 +769,8 @@ section {
 }
 
 .edu-icon-wrap {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -777,13 +779,14 @@ section {
   color: var(--brown-light);
   font-size: 1.3rem;
   flex-shrink: 0;
+  transition: all var(--transition);
 }
 
 .edu-logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
 
 .edu-degree {
@@ -843,8 +846,8 @@ section {
 }
 
 .cert-badge {
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -852,13 +855,14 @@ section {
   border-radius: 8px;
   color: var(--cyan);
   font-size: 1.2rem;
+  transition: all var(--transition);
 }
 
 .cert-logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
 
 .cert-name {
@@ -1033,8 +1037,8 @@ section {
   background: var(--black);
   border: 1px solid var(--black-border);
   transition: all var(--transition);
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
 }
 
 .proj-tech-logo-wrapper:hover {
@@ -1205,6 +1209,67 @@ footer {
   }
 }
 
+/* Laptop */
+@media (max-width: 1199px) {
+  .skill-logo-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+
+  .proj-tech-logo-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+
+  .exp-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .edu-icon-wrap {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cert-badge {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .nav-logo {
+    font-size: 1.35rem;
+  }
+
+  .skill-logo-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .proj-tech-logo-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .exp-logo {
+    width: 46px;
+    height: 46px;
+    padding: 0.4rem;
+  }
+
+  .edu-icon-wrap {
+    width: 46px;
+    height: 46px;
+  }
+
+  .cert-badge {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   :root {
@@ -1214,6 +1279,10 @@ footer {
   /* Nav */
   #navbar {
     padding: 0 5%;
+  }
+
+  .nav-logo {
+    font-size: 1.3rem;
   }
 
   .nav-links {
@@ -1243,13 +1312,13 @@ footer {
 
   /* Skills */
   .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+    gap: 0.6rem;
   }
 
   .skill-logo-wrapper {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     padding: 4px;
   }
 
@@ -1292,6 +1361,24 @@ footer {
     padding-top: 1.5rem;
   }
 
+  .exp-logo {
+    width: 42px;
+    height: 42px;
+    padding: 0.35rem;
+  }
+
+  /* Education */
+  .edu-icon-wrap {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Certifications */
+  .cert-badge {
+    width: 40px;
+    height: 40px;
+  }
+
   /* Grids */
   .cert-grid {
     grid-template-columns: 1fr;
@@ -1303,13 +1390,13 @@ footer {
 
   /* Project Tech */
   .proj-tech {
-    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+    gap: 0.6rem;
   }
 
   .proj-tech-logo-wrapper {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     padding: 4px;
   }
 
@@ -1330,6 +1417,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+
   .interests-grid {
     grid-template-columns: 1fr;
   }
@@ -1341,25 +1432,44 @@ footer {
 
   /* Skills */
   .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
     gap: 0.5rem;
   }
 
   .skill-logo-wrapper {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     padding: 4px;
+  }
+
+  /* Experience */
+  .exp-logo {
+    width: 38px;
+    height: 38px;
+    padding: 0.3rem;
+  }
+
+  /* Education */
+  .edu-icon-wrap {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Certifications */
+  .cert-badge {
+    width: 36px;
+    height: 36px;
   }
 
   /* Project Tech */
   .proj-tech {
-    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
     gap: 0.5rem;
   }
 
   .proj-tech-logo-wrapper {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     padding: 4px;
   }
 
