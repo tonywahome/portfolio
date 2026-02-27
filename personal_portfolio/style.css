@@ -583,27 +583,41 @@ section {
 }
 
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
   gap: 0.6rem;
+  justify-items: center;
 }
 
-.skill-tag {
-  display: inline-block;
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-family: var(--font-mono);
-  font-weight: 500;
-  background: var(--brown-dim);
-  border: 1px solid var(--brown-border);
-  color: var(--brown-light);
+.skill-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 12px;
+  background: var(--black);
+  border: 1px solid var(--black-border);
   transition: all var(--transition);
+  width: 45px;
+  height: 45px;
 }
 
-.skill-tag:hover {
+.skill-logo-wrapper:hover {
   background: rgba(196, 151, 62, 0.22);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(196, 151, 62, 0.25);
+}
+
+.skill-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.95);
+  transition: filter var(--transition);
+}
+
+.skill-logo-wrapper:hover .skill-logo {
+  filter: brightness(1.1);
 }
 
 /* ── 9. Experience Section ── */
@@ -1004,19 +1018,41 @@ section {
 }
 
 .proj-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+  gap: 0.6rem;
+  justify-items: center;
 }
 
-.proj-tech span {
-  font-size: 0.75rem;
-  font-family: var(--font-mono);
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  background: var(--brown-dim);
-  border: 1px solid var(--brown-border);
-  color: var(--brown-light);
+.proj-tech-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 12px;
+  background: var(--black);
+  border: 1px solid var(--black-border);
+  transition: all var(--transition);
+  width: 45px;
+  height: 45px;
+}
+
+.proj-tech-logo-wrapper:hover {
+  background: rgba(196, 151, 62, 0.22);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(196, 151, 62, 0.25);
+}
+
+.proj-tech-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.95);
+  transition: filter var(--transition);
+}
+
+.proj-tech-logo-wrapper:hover .proj-tech-logo {
+  filter: brightness(1.1);
 }
 
 .proj-links {
@@ -1205,6 +1241,18 @@ footer {
     margin: 0 auto;
   }
 
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .skill-logo-wrapper {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+  }
+
   /* Experience */
   .exp-layout {
     flex-direction: column;
@@ -1253,6 +1301,18 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /* Project Tech */
+  .proj-tech {
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .proj-tech-logo-wrapper {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+  }
+
   .interests-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1277,6 +1337,30 @@ footer {
   .hero-cta {
     flex-direction: column;
     align-items: center;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .skill-logo-wrapper {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+  }
+
+  /* Project Tech */
+  .proj-tech {
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .proj-tech-logo-wrapper {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
   }
 
   .btn {
