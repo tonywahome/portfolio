@@ -24,7 +24,7 @@
   --brown-border: rgba(196, 151, 62, 0.35);
 
   /* Text */
-  --text-primary: #e2e8f0;
+  --text-primary: #d1d5db;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
 
@@ -373,7 +373,7 @@ section {
 .hero-greeting {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--cyan);
+  color: var(--text-primary);
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -385,15 +385,12 @@ section {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1rem;
-  background: var(--grad-name);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
 
 .hero-title-wrapper {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   min-height: 2rem;
   display: flex;
@@ -404,12 +401,12 @@ section {
 }
 
 .hero-typed {
-  color: var(--brown-light);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
 .hero-cursor {
-  color: var(--cyan);
+  color: var(--text-primary);
   animation: blink 1s step-end infinite;
   font-weight: 300;
 }
