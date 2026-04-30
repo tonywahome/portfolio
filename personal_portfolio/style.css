@@ -1100,28 +1100,26 @@ section {
   box-shadow: 0 10px 30px rgba(6, 182, 212, 0.1);
 }
 
-.interest-icon {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
 .interest-card h3 {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.9rem;
   color: var(--text-primary);
 }
 
-.interest-card p {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
+.interest-image {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform var(--transition);
 }
 
-/* ── 14. Contact Section ── */
-.contact-container {
-  text-align: center;
+.interest-card:hover .interest-image {
+  transform: translateY(-1px);
 }
 
 .contact-sub {
